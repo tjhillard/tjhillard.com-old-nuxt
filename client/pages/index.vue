@@ -1,5 +1,11 @@
 <template>
   <section class="h-screen topograph">
+    <transition name="fade-extra-slow">
+      <navbar
+        v-if="showNavbar"
+      />
+    </transition>
+
     <main class="container grid p-md">
       <!-- hero -->
       <div class="main-hero col-sm-12 pt-lg">
@@ -8,14 +14,17 @@
             <h1 class="mt-3xl" style="font-size: 94px; letter-spacing: 1px; margin-bottom: 20px;">
               Hello!
             </h1>
-            <h2 style="line-height: 0.5em;">
+            <h2 class="px-sm" style="line-height: 0.5em;">
               My name is TJ Hillard, I'm a
               <span class="underline text-secondary font-weight-medium cursor-pointer" @click="rotateTitle">
                 {{ titles[currentTitleIndex] }}
               </span>.
             </h2>
             <div class="pt-sm">
-              <button class="button button-primary button-big hover:rise-md hover:shadow-md">
+              <button
+                class="button button-primary button-big hover:rise-md hover:shadow-md"
+                @click="scrollToProjects()"
+              >
                 View projects
               </button>
             </div>
@@ -26,7 +35,7 @@
 
     <!-- projects -->
     <transition name="fade-extra-slow">
-      <div v-if="showProjects" class="col-sm-12 mt-md diagonal min-h-screen">
+      <div v-if="showProjects" id="projects" class="col-sm-12 mt-md diagonal min-h-screen">
         <div class="container sm:px-md md:px-lg">
           <h2 class="text-white">
             Projects
@@ -121,7 +130,7 @@
 
     <!-- codepens -->
     <div v-if="showWriting" class="min-h-screen flex flex-col justify-center bg-primary">
-      <div class="container sm:px-sm md:px-md pb-2xl">
+      <div class="container sm:px-md md:px-lg pb-2xl">
         <h2 class="text-white">
           Codepens
         </h2>
@@ -143,7 +152,7 @@
 
     <!-- contact -->
     <div v-if="showWriting" class="py-3xl pattern-triangles">
-      <div class="container sm:px-sm md:px-md font-size-lg">
+      <div class="container sm:px-md md:px-lg font-size-lg">
         <div>
           <h2>
             Get in touch
@@ -161,6 +170,7 @@
 </template>
 
 <script>
+import Navbar from '@/components/base/navbar';
 import ProjectCard from '@/components/application/project-card';
 
 import OnScrolledTo from '@/directives/on-scrolled-to';
@@ -168,12 +178,14 @@ import OnScrolledTo from '@/directives/on-scrolled-to';
 export default {
   components: {
     ProjectCard,
+    Navbar,
   },
   directives: {
     OnScrolledTo,
   },
   data() {
     return {
+      showNavbar: false,
       showHello: false,
       showProjects: false,
       showWriting: false,
@@ -194,6 +206,10 @@ export default {
   },
   created() {
     setTimeout(() => {
+      this.showNavbar = true;
+    }, 20);
+
+    setTimeout(() => {
       this.showHello = true;
     }, 70);
 
@@ -212,6 +228,11 @@ export default {
       } else {
         this.currentTitleIndex++;
       }
+    },
+    scrollToProjects() {
+      document.querySelector('#projects').scrollIntoView({
+        behavior: 'smooth',
+      });
     },
   },
 };

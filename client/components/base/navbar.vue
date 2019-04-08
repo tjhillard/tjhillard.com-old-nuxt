@@ -6,17 +6,17 @@
           _tjhillard
         </span>
         <span class="font-size-md pt-sm">
-          <span class="px-lg pb-sm cursor-pointer">
-            Projects
-          </span>
+          <a href="https://github.com/tjhillard" target="_blank" class="sm:px-sm md:px-lg pb-sm cursor-pointer no-underline text-black hover:underline">
+            <fa :icon="['fab', 'github']" />
+          </a>
 
-          <span class="px-lg pb-sm cursor-pointer">
-            Writing
-          </span>
+          <a href="https://twitter.com/_tjhillard" target="_blank" class="sm:px-sm md:px-lg pb-sm cursor-pointer no-underline text-black hover:underline">
+            <fa :icon="['fab', 'twitter']" />
+          </a>
 
-          <span class="px-lg pb-sm cursor-pointer">
-            Contact
-          </span>
+          <a href="https://www.linkedin.com/in/tjhillard" target="_blank" class="sm:px-sm md:px-lg pb-sm cursor-pointer no-underline text-black hover:underline">
+            <fa :icon="['fab', 'linkedin']" />
+          </a>
         </span>
       </div>
     </transition>

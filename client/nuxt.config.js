@@ -13,7 +13,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: pkg.name,
+    title: 'tjhillard',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -44,10 +44,11 @@ export default {
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/auth',
+    // '@nuxtjs/auth',
     '@nuxtjs/axios',
     '@nuxtjs/dotenv',
     '@nuxtjs/proxy',
+    'nuxt-fontawesome',
   ],
 
   proxy: {
@@ -61,26 +62,41 @@ export default {
     baseURL: '/api',
   },
 
-  auth: {
-    strategies: {
-      local: {
-        endpoints: {
-          login: {
-            url: 'auth/login',
-            method: 'post',
-            propertyName: 'token',
-          },
-          user: { url: 'auth/me', method: 'get', propertyName: '' },
-          logout: false,
-        },
+  // auth: {
+  //   strategies: {
+  //     local: {
+  //       endpoints: {
+  //         login: {
+  //           url: 'auth/login',
+  //           method: 'post',
+  //           propertyName: 'token',
+  //         },
+  //         user: { url: 'auth/me', method: 'get', propertyName: '' },
+  //         logout: false,
+  //       },
+  //     },
+  //   },
+  //   redirect: {
+  //     login: '/login',
+  //     logout: '/login',
+  //     callback: '/',
+  //     home: '/',
+  //   },
+  // },
+
+  fontawesome: {
+    component: 'fa',
+    imports: [
+      // import whole set
+      {
+        set: '@fortawesome/free-solid-svg-icons',
+        icons: ['fas'],
       },
-    },
-    redirect: {
-      login: '/login',
-      logout: '/login',
-      callback: '/',
-      home: '/',
-    },
+      {
+        set: '@fortawesome/free-brands-svg-icons',
+        icons: ['fab'],
+      },
+    ],
   },
 
   /*
