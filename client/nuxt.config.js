@@ -49,7 +49,14 @@ export default {
     '@nuxtjs/dotenv',
     '@nuxtjs/proxy',
     'nuxt-fontawesome',
+    'nuxt-webfontloader',
   ],
+
+  webfontloader: {
+    google: {
+      families: ['Cormorant+Infant:400,500', 'Josefin+Sans:400,700', 'Hind:400,500'],
+    },
+  },
 
   proxy: {
     '/api': 'http://127.0.0.1:3001',
