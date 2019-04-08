@@ -1,0 +1,23 @@
+.button {
+	padding: 8px 16px;
+	background-color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: 500;
+
+	&.button-big {
+		padding: 16px 24px;
+	}
+
+	&.button-primary {
+		background-color: $color-primary;
+		color: $color-white;
+		border-color: $color-primary;
+	}
+
+	&.button-info {
+		background-color: $color-info;
+		color: $color-white;
+		border-color: $color-info;
+	}
+}

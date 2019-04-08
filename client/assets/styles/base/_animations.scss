@@ -1,0 +1,14 @@
+.waver {
+	animation-name: waver;
+	animation-duration: 0.52s;
+	animation-iteration-count: 5.4;
+	animation-direction: alternate;
+	transform-origin: 50% 90%;
+	animation-timing-function: ease-in-out;
+	position: absolute;
+}
+
+@keyframes waver {
+	0% { transform: rotate(-10deg); }
+	100% { transform: rotate(10deg); }
+}

@@ -1,0 +1,41 @@
+module.exports = {
+  root: true,
+  env: {
+    browser: true,
+    node: true,
+  },
+  parserOptions: {
+    parser: 'babel-eslint',
+  },
+  extends: [
+    '@nuxtjs',
+    'plugin:nuxt/recommended',
+    'plugin:vue/recommended',
+    'airbnb-base',
+  ],
+  // add your custom rules here
+  rules: {
+    'import/no-unresolved': 'off',
+    'comma-dangle': ['warn', 'always-multiline'],
+    'no-underscore-dangle': 'off',
+    'no-console': 'off',
+    'no-param-reassign': ['error', { 'props': false }],
+    'radix': 'off',
+    'consistent-return': 'off',
+    'arrow-body-style': 'off',
+    'no-plusplus': 'off',
+    'no-unused-vars': ['error', { 'args': 'none' }],
+    'no-use-before-define': 'off',
+    'no-resolved': 'off',
+    'class-methods-use-this': 'off',
+    'max-len': 'off',
+    'object-curly-newline': 'off',
+    'func-names': 'off',
+    'brace-style': 'off',
+    'eqeqeq': 'off',
+    'arrow-parens': 'off',
+    'no-alert': 'off',
+    'prefer-destructuring': 'off',
+    'array-callback-return': 'off',
+  },
+};
