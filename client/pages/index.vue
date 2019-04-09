@@ -6,14 +6,16 @@
       />
     </transition>
 
-    <main class="container grid p-md">
+    <main class="container grid">
       <!-- hero -->
       <div class="main-hero col-sm-12 pt-lg">
         <transition name="fade-extra-slow">
           <div v-if="showHello" class="pt-3lg">
-            <h1 class="mt-3xl" style="font-size: 6em; margin-bottom: 0;">
-              Hello!
-            </h1>
+            <transition name="slide-in-from-left-extra-slow">
+              <h1 v-if="showHelloHeading" class="mt-3xl" style="font-size: 6em; margin-bottom: 0;">
+                Hello!
+              </h1>
+            </transition>
             <h2 class="px-sm no-user-select" style="line-height: 0.5em;">
               My name is TJ Hillard, I'm a
               <span class="underline text-secondary font-weight-medium cursor-pointer" @click="rotateTitle">{{ titles[currentTitleIndex] }}.</span>
@@ -34,7 +36,7 @@
     <!-- projects -->
     <transition name="fade-extra-slow">
       <div v-if="showProjects" id="projects" class="col-sm-12 mt-md diagonal sm:min-h-screen md:min-h-auto py-3xl">
-        <div class="container sm:px-md md:px-lg">
+        <div class="container">
           <h2 class="text-white">
             Projects
           </h2>
@@ -43,7 +45,7 @@
             The majority of my code is written at work, but I always try to find time to make things for fun in my free time.
           </p>
 
-          <div class="grid pt-sm font-weight-medium">
+          <div class="grid pt-sm">
             <project-card v-if="showProjects" name="steller-css" emoji="⛰️" link="https://github.com/tjhillard/steller-css">
               <span>
                 Steller is a "functional CSS" framework made to enforce
@@ -75,9 +77,9 @@
                 A few years ago while listening to NPR at work, I got frustrated
                 that their web player didn't (and still doesn't) have basic volume controls to independently
                 manage the volume level, so, I made my frist ever
-                <a href="#" target="_blank">chrome extension</a>! It has received hundreds of installs
+                <a href="https://chrome.google.com/webstore/detail/npr-volume/dhhiahjlllgdfmlofacelhlikdnnalan" target="_blank">chrome extension</a>! It has received hundreds of installs
                 and even
-                <a href="#" target="_blank">received praise from the Lead UX Strategist at NPR</a>.
+                <a href="https://medium.com/@scottstroud/thanks-deborah-efc115e945d9" target="_blank">received praise from the Lead UX Strategist at NPR</a>.
                 30 minutes on a Friday night well spent.
               </span>
             </project-card>
@@ -106,7 +108,7 @@
 
     <!-- writing -->
     <div v-if="showWriting" class="pattern-hideout sm:min-h-screen md:min-h-auto py-3xl flex flex-col justify-center">
-      <div class="container px-md mb-2xl">
+      <div class="container mb-2xl">
         <div class="grid">
           <div class="col-sm-12 col-md-12 col-lg-12">
             <h2 class="leading-tight">
@@ -128,7 +130,7 @@
 
     <!-- codepens -->
     <div v-if="showWriting" class="sm:min-h-screen md:min-h-auto py-3xl flex flex-col justify-center bg-primary">
-      <div class="container sm:px-md md:px-lg pb-2xl">
+      <div class="container pb-2xl">
         <h2 class="text-white">
           Codepens
         </h2>
@@ -150,7 +152,7 @@
 
     <!-- contact -->
     <div v-if="showWriting" class="py-3xl pattern-triangles">
-      <div class="container sm:px-md md:px-lg font-size-lg">
+      <div class="container font-size-lg">
         <div>
           <h2>
             Get in touch
@@ -185,6 +187,7 @@ export default {
     return {
       showNavbar: false,
       showHello: false,
+      showHelloHeading: false,
       showProjects: false,
       showWriting: false,
       currentTitleIndex: 0,
@@ -210,6 +213,10 @@ export default {
     setTimeout(() => {
       this.showHello = true;
     }, 70);
+
+    setTimeout(() => {
+      this.showHelloHeading = true;
+    }, 90);
 
     setTimeout(() => {
       this.showProjects = true;
