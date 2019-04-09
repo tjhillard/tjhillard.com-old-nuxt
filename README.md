@@ -15,7 +15,7 @@ My personal site! 🤙
 cd client && npm run dev
 ```
 
-**Backend::**
+**Backend:**
 ```
 cd server && npm run start:dev
 ```
