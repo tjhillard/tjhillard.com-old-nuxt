@@ -111,7 +111,7 @@
       <div class="container mb-2xl">
         <div class="grid">
           <div class="col-sm-12 col-md-12 col-lg-12">
-            <h2 class="leading-tight">
+            <h2>
               Writing
             </h2>
             <p>
