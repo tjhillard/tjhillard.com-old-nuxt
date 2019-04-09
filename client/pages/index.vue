@@ -12,11 +12,11 @@
         <transition name="fade-extra-slow">
           <div v-if="showHello" class="pt-3lg">
             <transition name="slide-in-from-left-extra-slow">
-              <h1 v-if="showHelloHeading" class="mt-3xl" style="font-size: 6em; margin-bottom: 0;">
+              <h1 v-if="showHelloHeading" class="mt-3xl font-size-4xl" style="margin-bottom: 0; margin-left: -1px;">
                 Hello!
               </h1>
             </transition>
-            <h2 class="px-sm no-user-select" style="line-height: 0.5em;">
+            <h2 class="no-user-select" style="line-height: 0.5em;">
               My name is TJ Hillard, I'm a
               <span class="underline text-secondary font-weight-medium cursor-pointer" @click="rotateTitle">{{ titles[currentTitleIndex] }}.</span>
             </h2>
