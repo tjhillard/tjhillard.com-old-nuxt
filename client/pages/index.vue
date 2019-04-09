@@ -11,14 +11,12 @@
       <div class="main-hero col-sm-12 pt-lg">
         <transition name="fade-extra-slow">
           <div v-if="showHello" class="pt-3lg">
-            <h1 class="mt-3xl" style="font-size: 94px; letter-spacing: 1px; margin-bottom: 20px;">
+            <h1 class="mt-3xl" style="font-size: 6em; margin-bottom: 0;">
               Hello!
             </h1>
-            <h2 class="px-sm" style="line-height: 0.5em;">
+            <h2 class="px-sm no-user-select" style="line-height: 0.5em;">
               My name is TJ Hillard, I'm a
-              <span class="underline text-secondary font-weight-medium cursor-pointer" @click="rotateTitle">
-                {{ titles[currentTitleIndex] }}
-              </span>.
+              <span class="underline text-secondary font-weight-medium cursor-pointer" @click="rotateTitle">{{ titles[currentTitleIndex] }}.</span>
             </h2>
             <div class="pt-sm">
               <button
@@ -35,7 +33,7 @@
 
     <!-- projects -->
     <transition name="fade-extra-slow">
-      <div v-if="showProjects" id="projects" class="col-sm-12 mt-md diagonal min-h-screen">
+      <div v-if="showProjects" id="projects" class="col-sm-12 mt-md diagonal sm:min-h-screen md:min-h-auto py-3xl">
         <div class="container sm:px-md md:px-lg">
           <h2 class="text-white">
             Projects
@@ -107,12 +105,12 @@
     </transition>
 
     <!-- writing -->
-    <div v-if="showWriting" class="pattern-hideout min-h-screen flex flex-col justify-center">
+    <div v-if="showWriting" class="pattern-hideout sm:min-h-screen md:min-h-auto py-3xl flex flex-col justify-center">
       <div class="container px-md mb-2xl">
         <div class="grid">
           <div class="col-sm-12 col-md-12 col-lg-12">
             <h2 class="leading-tight">
-              Writing (Coming Soon)
+              Writing
             </h2>
             <p>
               I'm putting this section here to motivate me to start writing articles.
@@ -129,7 +127,7 @@
     </div>
 
     <!-- codepens -->
-    <div v-if="showWriting" class="min-h-screen flex flex-col justify-center bg-primary">
+    <div v-if="showWriting" class="sm:min-h-screen md:min-h-auto py-3xl flex flex-col justify-center bg-primary">
       <div class="container sm:px-md md:px-lg pb-2xl">
         <h2 class="text-white">
           Codepens
@@ -238,7 +236,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .mountain-bg {
   background-image: url('~assets/images/mountains-2.jpg');
   background-size: cover;
@@ -246,5 +244,9 @@ export default {
   background-attachment: fixed;
   overflow: auto;
   opacity: 0.9;
+
+  @media (max-width: 600px) {
+    background-attachment: scroll;
+  }
 }
 </style>

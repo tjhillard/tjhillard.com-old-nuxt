@@ -16,17 +16,17 @@ $row-gutter-lg: 16px;
 // This variable is consumed throughout the framework to generate responsive class variants.
 // Modify with care.
 $breakpoint-map: (
-  (sm, $breakpoint-sm, $column-gutter-sm, $row-gutter-sm),
-  (md, $breakpoint-md, $column-gutter-md, $row-gutter-md),
-  (lg, $breakpoint-lg, $column-gutter-lg, $row-gutter-lg),
+  (sm, $breakpoint-sm-min, $breakpoint-sm-max, $column-gutter-sm, $row-gutter-sm),
+  (md, $breakpoint-md-min, $breakpoint-md-max, $column-gutter-md, $row-gutter-md),
+  (lg, $breakpoint-lg-min, $breakpoint-lg-max, $column-gutter-lg, $row-gutter-lg),
 );
 
 .grid {
   display: grid;
   grid-template-columns: repeat($grid-columns, 1fr);
 
-  @each $label, $breakpoint, $col-gutter, $row-gutter in $breakpoint-map {
-    @media (min-width: #{$breakpoint}) {
+  @each $label, $breakpoint-min, $breakpoint-max, $col-gutter, $row-gutter in $breakpoint-map {
+    @media (min-width: #{$breakpoint-min}) {
       grid-column-gap: $col-gutter;
       grid-row-gap: $row-gutter;
 

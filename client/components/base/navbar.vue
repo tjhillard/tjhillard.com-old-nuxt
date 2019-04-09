@@ -6,15 +6,15 @@
           _tjhillard
         </span>
         <span class="font-size-md pt-sm">
-          <a href="https://github.com/tjhillard" target="_blank" class="sm:px-sm md:px-lg pb-sm cursor-pointer no-underline text-black hover:underline">
+          <a href="https://github.com/tjhillard" target="_blank" class="sm:px-sm md:px-lg lg:px-lg cursor-pointer no-underline text-black hover:underline">
             <fa :icon="['fab', 'github']" />
           </a>
 
-          <a href="https://twitter.com/_tjhillard" target="_blank" class="sm:px-sm md:px-lg pb-sm cursor-pointer no-underline text-black hover:underline">
+          <a href="https://twitter.com/_tjhillard" target="_blank" class="sm:px-sm md:px-lg lg:px-lg cursor-pointer no-underline text-black hover:underline">
             <fa :icon="['fab', 'twitter']" />
           </a>
 
-          <a href="https://www.linkedin.com/in/tjhillard" target="_blank" class="sm:px-sm md:px-lg pb-sm cursor-pointer no-underline text-black hover:underline">
+          <a href="https://www.linkedin.com/in/tjhillard" target="_blank" class="sm:px-sm md:px-lg lg:px-lg cursor-pointer no-underline text-black hover:underline">
             <fa :icon="['fab', 'linkedin']" />
           </a>
         </span>

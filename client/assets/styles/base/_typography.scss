@@ -49,9 +49,9 @@ $font-size-map: (
   }
 }
 
-@each $breakpoint-label, $breakpoint in $breakpoint-map {
+@each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
   @each $font-size-label, $size in $font-size-map {
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
       .#{$breakpoint-label}\:font-size-#{$font-size-label} {
         font-size: $size;
       }
@@ -79,9 +79,9 @@ $font-weight-map: (
   }
 }
 
-@each $breakpoint-label, $breakpoint in $breakpoint-map {
+@each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
   @each $font-weight-label, $font-weight in $font-weight-map {
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
       .#{$breakpoint-label}\:font-weight-#{$font-weight-label} {
         font-weight: $font-weight;
       }
@@ -127,13 +127,21 @@ $font-style-map: (
     #{$font-style-property}: $font-style-value;
   }
 
-  @each $breakpoint-label, $breakpoint in $breakpoint-map {
+  @each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
     .#{$breakpoint-label}\:#{$font-style-class-name} {
-      @media (min-width: $breakpoint) {
+      @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
         #{$font-style-property}: $font-style-value;
       }
     }
   }
+}
+
+// -----------------------------
+// Headings
+// -----------------------------
+
+h1, h2, h3, h4, h5 {
+  font-family: $font-family-heading;
 }
 
 // -----------------------------
@@ -148,14 +156,14 @@ h1 {
   font-weight: 700;
 }
 
-@media (min-width: $breakpoint-md) {
+@media (min-width: $breakpoint-md-min) {
   h1 {
     font-size: $font-size-md * 2.5;
     line-height: 1.125;
   }
 }
 
-@media (min-width: $breakpoint-lg) {
+@media (min-width: $breakpoint-lg-min) {
   h1 {
     font-size: $font-size-md * 3;
     line-height: 1.05;
@@ -169,14 +177,14 @@ h2 {
   font-weight: 400;
 }
 
-@media (min-width: $breakpoint-md) {
+@media (min-width: $breakpoint-md-min) {
   h2 {
     font-size: $font-size-md * 2;
     line-height: 1.25;
   }
 }
 
-@media (min-width: $breakpoint-lg) {
+@media (min-width: $breakpoint-lg-min) {
   h2 {
     font-size: $font-size-md * 2.25;
     line-height: 1.25;
@@ -190,14 +198,14 @@ h3 {
   font-weight: 400;
 }
 
-@media (min-width: $breakpoint-md) {
+@media (min-width: $breakpoint-md-min) {
   h3 {
     font-size: $font-size-md * 1.5;
     line-height: 1.25;
   }
 }
 
-@media (min-width: $breakpoint-lg) {
+@media (min-width: $breakpoint-lg-min) {
   h3 {
     font-size: $font-size-md * 1.75;
     line-height: 1.25;
@@ -211,7 +219,7 @@ h4 {
   font-weight: 400;
 }
 
-@media (min-width: $breakpoint-md) {
+@media (min-width: $breakpoint-md-min) {
   h4 {
     line-height: 1.22222222;
   }

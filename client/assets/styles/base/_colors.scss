@@ -196,9 +196,9 @@ $color-map: (
     color: $color-value;
   }
 
-  @each $breakpoint-label, $breakpoint in $breakpoint-map {
+  @each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
     .#{$breakpoint-label}\:#{$color-class-name} {
-      @media (min-width: $breakpoint) {
+      @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
         color: $color-value;
       }
     }
@@ -302,9 +302,9 @@ $background-color-map: (
     background-color: $background-color-value;
   }
 
-  @each $breakpoint-label, $breakpoint in $breakpoint-map {
+  @each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
     .#{$breakpoint-label}\:#{$background-color-class-name} {
-      @media (min-width: $breakpoint) {
+      @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
         background-color: $background-color-value;
       }
     }
