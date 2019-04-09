@@ -12,7 +12,7 @@
         <transition name="fade-extra-slow">
           <div v-if="showHello">
             <transition name="slide-in-from-left-extra-slow">
-              <h1 v-if="showHelloHeading" class="mt-3xl font-size-4xl sm:text-secondary md:text-secondary lg:text-primary" style="margin-bottom: 0; margin-left: -1px;">
+              <h1 v-if="showHelloHeading" class="mt-3xl font-size-4xl" style="margin-bottom: 0; margin-left: -1px;">
                 Hello! 👋
               </h1>
             </transition>
