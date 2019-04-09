@@ -37,7 +37,10 @@ $speeds: (
     transform: translateY(-10%);
     opacity: 0;
   }
-  .slide-in-from-top-#{$speed-name}-enter-to { transition: all #{$speed} ease-in-out; }
+  .slide-in-from-top-#{$speed-name}-enter-to {
+    transition: all #{$speed} ease-in-out;
+    opacity: 1;
+  }
   .slide-in-from-top-#{$speed-name}-enter-active { transition: all #{$speed} ease-in-out; }
 }
 
@@ -50,7 +53,10 @@ $speeds: (
     transform: translateY(10%);
     opacity: 0;
   }
-  .slide-in-from-bottom-#{$speed-name}-enter-to { transition: all #{$speed} ease-in-out; }
+  .slide-in-from-bottom-#{$speed-name}-enter-to {
+    transition: all #{$speed} ease-in-out;
+    opacity: 1;
+  }
   .slide-in-from-bottom-#{$speed-name}-enter-active { transition: all #{$speed} ease-in-out; }
 }
 
@@ -63,7 +69,10 @@ $speeds: (
     transform: translateX(10%);
     opacity: 0;
   }
-  .slide-in-from-right-#{$speed-name}-enter-to { transition: all #{$speed} ease-in-out; }
+  .slide-in-from-right-#{$speed-name}-enter-to {
+    transition: all #{$speed} ease-in-out;
+    opacity: 1;
+  }
   .slide-in-from-right-#{$speed-name}-enter-active { transition: all #{$speed} ease-in-out; }
 }
 
@@ -76,7 +85,10 @@ $speeds: (
     transform: translateX(-10%);
     opacity: 0;
   }
-  .slide-in-from-left-#{$speed-name}-enter-to { transition: all #{$speed} ease-in-out; }
+  .slide-in-from-left-#{$speed-name}-enter-to {
+    transition: all #{$speed} ease-in-out;
+    opacity: 1;
+  }
   .slide-in-from-left-#{$speed-name}-enter-active { transition: all #{$speed} ease-in-out; }
 }
 

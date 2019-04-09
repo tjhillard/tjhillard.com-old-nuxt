@@ -13,7 +13,7 @@
           <div v-if="showHello" class="pt-3lg">
             <transition name="slide-in-from-left-extra-slow">
               <h1 v-if="showHelloHeading" class="mt-3xl font-size-4xl" style="margin-bottom: 0; margin-left: -1px;">
-                Hello!
+                Hello! 👋
               </h1>
             </transition>
             <h2 class="no-user-select" style="line-height: 0.5em;">
