@@ -24,10 +24,6 @@ $types: (
   (padding, p),
 );
 
-// @each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
-  
-// }
-
 @each $spacing, $spacing-label in $spacing-sizes {
   @each $type, $type-label in $types {
     // t, r, b, l
