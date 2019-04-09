@@ -5,7 +5,7 @@
         <span class="font-size-xl">
           _tjhillard
         </span>
-        <span class="font-size-md pt-sm">
+        <span class="font-size-lg pt-sm">
           <a href="https://github.com/tjhillard" target="_blank" class="sm:px-sm md:px-lg lg:px-lg cursor-pointer no-underline text-black hover:underline">
             <fa :icon="['fab', 'github']" />
           </a>
