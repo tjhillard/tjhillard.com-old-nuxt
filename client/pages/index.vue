@@ -8,9 +8,9 @@
 
     <main class="container grid">
       <!-- hero -->
-      <div class="main-hero col-sm-12 pt-lg">
+      <div class="main-hero col-sm-12 py-lg">
         <transition name="fade-extra-slow">
-          <div v-if="showHello" class="pt-3lg">
+          <div v-if="showHello">
             <transition name="slide-in-from-left-extra-slow">
               <h1 v-if="showHelloHeading" class="mt-3xl font-size-4xl" style="margin-bottom: 0; margin-left: -1px;">
                 Hello! 👋
