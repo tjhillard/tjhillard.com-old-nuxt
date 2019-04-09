@@ -242,18 +242,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss">
-.mountain-bg {
-  background-image: url('~assets/images/mountains-2.jpg');
-  background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
-  overflow: auto;
-  opacity: 0.9;
-
-  @media (max-width: 600px) {
-    background-attachment: scroll;
-  }
-}
-</style>
