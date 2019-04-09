@@ -1,27 +1,25 @@
-# nest-nuxt-boilerplate
+# tjhillard.com
 
-## Backend Stack
-* Nestjs (TypeScript) - https://nestjs.com/
-* TypeORM - https://typeorm.io/#/
-* Postgres
-* Redis
-* JWT
-* Webpack
+My personal site! 🤙
 
-## Frontend Stack
-* Nuxt (SSR) - https://nuxtjs.org/
-* Vue / VueRouter / Vuex
-* TailwindCSS - https://tailwindcss.com/docs/what-is-tailwind/
-* Webpack
-* Babel
+### Built with
 
-## Tooling
-* Docker
-* ESLint
-* TSLint
-* Prettier
-* Jest
+* [nest-nuxt-boilerplate](https://github.com/tjhillard/nest-nuxt-boilerplate)
+* [steller-css](https://github.com/tjhillard/steller-css)
+* steller-components (coming soon)
 
-## Getting Started
+### Running Locally
 
-TBD
+**Frontend:**
+```
+cd client && npm run dev
+```
+
+**Backend::**
+```
+cd server && npm run start:dev
+```
+
+### Hosting
+
+[Netlify](https://www.netlify.com/) :sparkles:
