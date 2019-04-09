@@ -10,7 +10,7 @@
             href="https://github.com/tjhillard"
             target="_blank"
             class="
-              sm:pl-sm md:pl-lg lg:pl-lg cursor-pointer no-underline text-black hover:underline"
+              sm:pl-sm md:pl-lg cursor-pointer no-underline text-black hover:underline"
           >
             <fa :icon="['fab', 'github']" />
           </a>
@@ -19,7 +19,7 @@
             href="https://twitter.com/_tjhillard"
             target="_blank"
             class="
-              sm:pl-sm md:pl-lg lg:pl-lg cursor-pointer no-underline text-black hover:underline
+              sm:pl-sm md:pl-lg cursor-pointer no-underline text-black hover:underline
             "
           >
             <fa :icon="['fab', 'twitter']" />
@@ -29,7 +29,7 @@
             href="https://www.linkedin.com/in/tjhillard"
             target="_blank"
             class="
-              sm:pl-sm md:pl-lg lg:pl-lg cursor-pointer no-underline text-black hover:underline
+              sm:pl-sm md:pl-lg cursor-pointer no-underline text-black hover:underline
             "
           >
             <fa :icon="['fab', 'linkedin']" />

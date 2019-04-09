@@ -49,16 +49,6 @@ $font-size-map: (
   }
 }
 
-@each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
-  @each $font-size-label, $size in $font-size-map {
-    @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
-      .#{$breakpoint-label}\:font-size-#{$font-size-label} {
-        font-size: $size;
-      }
-    }
-  }
-}
-
 // -----------------------------
 // Font Weight
 // -----------------------------
@@ -76,16 +66,6 @@ $font-weight-map: (
 @each $font-weight-label, $font-weight in $font-weight-map {
   .font-weight-#{$font-weight-label} {
     font-weight: $font-weight;
-  }
-}
-
-@each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
-  @each $font-weight-label, $font-weight in $font-weight-map {
-    @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
-      .#{$breakpoint-label}\:font-weight-#{$font-weight-label} {
-        font-weight: $font-weight;
-      }
-    }
   }
 }
 
@@ -125,13 +105,5 @@ $font-style-map: (
 @each $font-style-class-name, $font-style-property, $font-style-value in $font-style-map {
   .#{$font-style-class-name} {
     #{$font-style-property}: $font-style-value;
-  }
-
-  @each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
-    .#{$breakpoint-label}\:#{$font-style-class-name} {
-      @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
-        #{$font-style-property}: $font-style-value;
-      }
-    }
   }
 }

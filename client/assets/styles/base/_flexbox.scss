@@ -55,12 +55,4 @@ $flexbox-map: (
   .#{$flexbox-class-name} {
     #{$flexbox-property}: $flexbox-value;
   }
-
-  @each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
-    .#{$breakpoint-label}\:#{$flexbox-class-name} {
-      @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
-        #{$flexbox-property}: $flexbox-value;
-      }
-    }
-  }
 }

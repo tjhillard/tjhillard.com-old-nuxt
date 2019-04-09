@@ -12,7 +12,7 @@
         <transition name="fade-extra-slow">
           <div v-if="showHello">
             <transition name="slide-in-from-left-extra-slow">
-              <h1 v-if="showHelloHeading" class="mt-3xl font-size-4xl" style="margin-bottom: 0; margin-left: -1px;">
+              <h1 v-if="showHelloHeading" class="mt-3xl font-size-4xl sm:text-secondary md:text-secondary lg:text-primary" style="margin-bottom: 0; margin-left: -1px;">
                 Hello! 👋
               </h1>
             </transition>
@@ -35,7 +35,7 @@
 
     <!-- projects -->
     <transition name="fade-extra-slow">
-      <div v-if="showProjects" id="projects" class="col-sm-12 mt-md diagonal sm:min-h-screen md:min-h-auto py-3xl">
+      <div v-if="showProjects" id="projects" class="col-sm-12 mt-md diagonal sm:min-h-screen md:min-h-auto lg:min-h-auto py-3xl">
         <div class="container">
           <h2 class="text-white">
             Projects
@@ -107,7 +107,7 @@
     </transition>
 
     <!-- writing -->
-    <div v-if="showWriting" class="pattern-hideout sm:min-h-screen md:min-h-auto py-3xl flex flex-col justify-center">
+    <div v-if="showWriting" class="pattern-hideout sm:min-h-screen md:min-h-auto lg:min-h-auto py-3xl flex flex-col justify-center">
       <div class="container mb-2xl">
         <div class="grid">
           <div class="col-sm-12 col-md-12 col-lg-12">
@@ -129,7 +129,7 @@
     </div>
 
     <!-- codepens -->
-    <div v-if="showWriting" class="sm:min-h-screen md:min-h-auto py-3xl flex flex-col justify-center bg-primary">
+    <div v-if="showWriting" class="sm:min-h-screen md:min-h-auto lg:min-h-auto py-3xl flex flex-col justify-center bg-primary">
       <div class="container pb-2xl">
         <h2 class="text-white">
           Codepens
