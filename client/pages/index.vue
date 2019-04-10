@@ -18,7 +18,7 @@
             </transition>
             <h2 class="no-user-select" style="line-height: 0.5em;">
               My name is TJ Hillard, I'm a
-              <span class="underline leading-normal text-secondary font-weight-medium cursor-pointer" @click="rotateTitle">{{ titles[currentTitleIndex] }}.</span>
+              <span class="underline leading-md text-secondary font-weight-medium cursor-pointer" @click="rotateTitle">{{ titles[currentTitleIndex] }}.</span>
             </h2>
             <div class="pt-sm">
               <button

@@ -25,9 +25,9 @@ $leading-lg: 2em;
 
 $typography-classes-map: (
   // font family
-  'heading': (font-family: $font-family-heading),
-  'secondary': (font-family: $font-family-secondary),
-  'body': (font-family: $font-family-body),
+  'font-family-heading': (font-family: $font-family-heading),
+  'font-family-secondary': (font-family: $font-family-secondary),
+  'font-family-body': (font-family: $font-family-body),
 
   // font size
   'font-size-xs': (font-size: $font-size-xs),
