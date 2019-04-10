@@ -1,8 +1,10 @@
+$spacing-classes-map: ();
+
 // -----------------------------
 // Spacing
 // -----------------------------
 
-$spacing-sizes: (
+$spacing-sizes-map: (
   (4px, 'xs'),
   (8px, 'sm'),
   (16px, 'md'),
@@ -12,42 +14,46 @@ $spacing-sizes: (
   (64px, "3xl"),
 );
 
-$sides: (
+$sides-labels-map: (
   (top, t),
   (right, r),
   (bottom, b),
   (left, l),
 );
 
-$spacing-types: (
+$size-types-map: (
   (margin, m),
   (padding, p),
 );
 
-@each $spacing, $spacing-label in $spacing-sizes {
-  @each $spacing-type, $spacing-type-label in $spacing-types {
+@each $spacing, $spacing-label in $spacing-sizes-map {
+  @each $type, $type-label in $size-types-map {
     // t, r, b, l
-    @each $side, $side-label in $sides {
-      .#{$spacing-type-label}#{$side-label}-#{$spacing-label} {
-        #{$spacing-type}-#{$side}: #{$spacing};
-      }
+    @each $side, $side-label in $sides-labels-map {
+      $spacing-classes-map: map-merge($spacing-classes-map, (
+        '#{$type-label}#{$side-label}-#{$spacing-label}': ('#{$type}-#{$side}': '#{$spacing}')
+      ));
     }
 
     // x
-    .#{$spacing-type-label}x-#{$spacing-label} {
-      #{$spacing-type}-left: #{$spacing};
-      #{$spacing-type}-right: #{$spacing};
-    }
+    $spacing-classes-map: map-merge($spacing-classes-map, (
+      '#{$type-label}x-#{$spacing-label}': (
+        '#{$type}-left': '#{$spacing}',
+        '#{$type}-right': '#{$spacing}',
+      )
+    ));
 
     // y
-    .#{$spacing-type-label}y-#{$spacing-label} {
-      #{$spacing-type}-top: #{$spacing};
-      #{$spacing-type}-bottom: #{$spacing};
-    }
+    $spacing-classes-map: map-merge($spacing-classes-map, (
+      '#{$type-label}y-#{$spacing-label}': (
+        '#{$type}-top': '#{$spacing}',
+        '#{$type}-bottom': '#{$spacing}',
+      )
+    ));
 
     // all
-    .#{$spacing-type-label}-#{$spacing-label} {
-      #{$spacing-type}: #{$spacing};
-    }
+    $spacing-classes-map: map-merge($spacing-classes-map, (
+      '#{$type-label}-#{$spacing-label}': ('#{$type}': '#{$spacing}')
+    ));
   }
 }

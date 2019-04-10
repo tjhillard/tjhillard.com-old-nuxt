@@ -6,18 +6,18 @@ $container-width: 1140px;
   position: relative;
   font-family: $font-family-body;
 
-  @media (min-width: $breakpoint-lg-min) and (max-width: $breakpoint-lg-max) {
+  @include above-media(breakpoint-sm) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  @include above-media(breakpoint-md) {
     padding-left: 24px;
     padding-right: 24px;
   }
 
-  @media (min-width: $breakpoint-md-min) and (max-width: $breakpoint-md-max) {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  @media (min-width: $breakpoint-sm-min) and (max-width: $breakpoint-sm-max) {
-    padding-left: 16px;
-    padding-right: 16px;
+  @include above-media(breakpoint-lg) {
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }

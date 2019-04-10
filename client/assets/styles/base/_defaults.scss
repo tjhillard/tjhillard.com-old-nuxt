@@ -2,14 +2,18 @@
 // General
 // -----------------------------
 
+html {
+  font-size: $font-size-md;
+}
+
 * {
 	color: $color-gray-dark-4;
-	line-height: $leading-normal;
+	line-height: $leading-md;
 }
 
 span, p {
-	@media (max-width: $breakpoint-sm-max) {
-		line-height: $leading-tight;
+	@media (max-width: $breakpoint-sm) {
+		line-height: $leading-sm;
 	}
 }
 
@@ -37,14 +41,14 @@ h1 {
   font-weight: 700;
 }
 
-@media (min-width: $breakpoint-md-min) {
+@media (min-width: $breakpoint-md) {
   h1 {
     font-size: $font-size-md * 2.5;
     line-height: 1.125;
   }
 }
 
-@media (min-width: $breakpoint-lg-min) {
+@media (min-width: $breakpoint-lg) {
   h1 {
     font-size: $font-size-md * 3;
     line-height: 1.05;
@@ -58,14 +62,14 @@ h2 {
   font-weight: 400;
 }
 
-@media (min-width: $breakpoint-md-min) {
+@media (min-width: $breakpoint-md) {
   h2 {
     font-size: $font-size-md * 2;
     line-height: 1.25;
   }
 }
 
-@media (min-width: $breakpoint-lg-min) {
+@media (min-width: $breakpoint-lg) {
   h2 {
     font-size: $font-size-md * 2.25;
     line-height: 1.25;
@@ -79,14 +83,14 @@ h3 {
   font-weight: 400;
 }
 
-@media (min-width: $breakpoint-md-min) {
+@media (min-width: $breakpoint-md) {
   h3 {
     font-size: $font-size-md * 1.5;
     line-height: 1.25;
   }
 }
 
-@media (min-width: $breakpoint-lg-min) {
+@media (min-width: $breakpoint-lg) {
   h3 {
     font-size: $font-size-md * 1.75;
     line-height: 1.25;
@@ -100,7 +104,7 @@ h4 {
   font-weight: 400;
 }
 
-@media (min-width: $breakpoint-md-min) {
+@media (min-width: $breakpoint-md) {
   h4 {
     line-height: 1.22222222;
   }

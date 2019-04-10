@@ -6,23 +6,6 @@ $font-family-heading: 'Josefin Sans', sans-serif;
 $font-family-secondary: 'Cormorant Infant', serif;
 $font-family-body: 'Hind', sans-serif;
 
-.font-family-heading {
-  font-family: $font-family-heading;
-}
-
-.font-family-secondary {
-  font-family: $font-family-secondary;
-  font-variant-ligatures: common-ligatures;
-}
-
-.font-family-body {
-  font-family: $font-family-body;
-}
-
-// -----------------------------
-// Font Size
-// -----------------------------
-
 $font-size-xs: 12px;
 $font-size-sm: 14px;
 $font-size-md: 18px; // 👈 .container default
@@ -32,78 +15,45 @@ $font-size-2xl: 36px;
 $font-size-3xl: 48px;
 $font-size-4xl: 60px;
 
-$font-size-map: (
-  ('xs', $font-size-xs),
-  ('sm', $font-size-sm),
-  ('md', $font-size-md),
-  ('lg', $font-size-lg),
-  ('xl', $font-size-xl),
-  ('2xl', $font-size-2xl),
-  ('3xl', $font-size-3xl),
-  ('4xl', $font-size-4xl),
-);
-
-@each $font-size-label, $size in $font-size-map {
-  .font-size-#{$font-size-label} {
-    font-size: $size;
-  }
-}
-
-// -----------------------------
-// Font Weight
-// -----------------------------
-
 $font-weight-bold: 700;
 $font-weight-medium: 500;
 $font-weight-regular: 400;
 
-$font-weight-map: (
-  ('bold', $font-weight-bold),
-  ('medium', $font-weight-medium),
-  ('regular', $font-weight-regular),
+$leading-sm: 1.25em;
+$leading-md: 1.5em;
+$leading-lg: 2em;
+
+$typography-classes-map: (
+  // font family
+  'heading': (font-family: $font-family-heading),
+  'secondary': (font-family: $font-family-secondary),
+  'body': (font-family: $font-family-body),
+
+  // font size
+  'font-size-xs': (font-size: $font-size-xs),
+  'font-size-sm': (font-size: $font-size-sm),
+  'font-size-md': (font-size: $font-size-md),
+  'font-size-lg': (font-size: $font-size-lg),
+  'font-size-xl': (font-size: $font-size-xl),
+  'font-size-2xl': (font-size: $font-size-2xl),
+  'font-size-3xl': (font-size: $font-size-3xl),
+  'font-size-4xl': (font-size: $font-size-4xl),
+
+  // font weight
+  'font-weight-bold': (font-weight: $font-weight-bold),
+  'font-weight-medium': (font-weight: $font-weight-medium),
+  'font-weight-regular': (font-weight: $font-weight-regular),
+
+  // leading
+  'leading-sm': (line-height: $leading-sm),
+  'leading-md': (line-height: $leading-md),
+  'leading-lg': (line-height: $leading-lg),
+
+  // font style / decoration
+  'italic': (font-style: italic),
+	'underline': (text-decoration: underline),
+	'no-underline': (text-decoration: none),
+	'lowercase': (text-transform: lowercase),
+	'uppercase': (text-transform: uppercase),
+	'capitalize': (text-transform: capitalize),
 );
-
-@each $font-weight-label, $font-weight in $font-weight-map {
-  .font-weight-#{$font-weight-label} {
-    font-weight: $font-weight;
-  }
-}
-
-// -----------------------------
-// Leading / Line Height
-// -----------------------------
-
-$leading-tight: 1.25em;
-$leading-normal: 1.5em;
-$leading-loose: 2em;
-
-.leading-tight {
-  line-height: $leading-tight;
-}
-
-.leading-normal {
-  line-height: $leading-normal;
-}
-
-.leading-loose {
-  line-height: $leading-loose;
-}
-
-// -----------------------------
-// Font Style / Decoration / Transform
-// -----------------------------
-
-$font-style-map: (
-	('italic', font-style, italic),
-	('underline', text-decoration, underline),
-	('no-underline', text-decoration, none),
-	('lowercase', text-transform, lowercase),
-	('uppercase', text-transform, uppercase),
-	('capitalize', text-transform, capitalize),
-);
-
-@each $font-style-class-name, $font-style-property, $font-style-value in $font-style-map {
-  .#{$font-style-class-name} {
-    #{$font-style-property}: $font-style-value;
-  }
-}

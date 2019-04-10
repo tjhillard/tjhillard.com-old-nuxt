@@ -8,7 +8,7 @@
 
     <main class="container grid">
       <!-- hero -->
-      <div class="main-hero col-sm-12 py-lg">
+      <div class="main-hero sm:col-12 py-lg">
         <transition name="fade-extra-slow">
           <div v-if="showHello">
             <transition name="slide-in-from-left-extra-slow">
@@ -35,7 +35,7 @@
 
     <!-- projects -->
     <transition name="fade-extra-slow">
-      <div v-if="showProjects" id="projects" class="col-sm-12 mt-md diagonal sm:min-h-screen md:min-h-auto lg:min-h-auto py-3xl">
+      <div v-if="showProjects" id="projects" class="sm:col-12 mt-md diagonal sm:min-h-screen md:min-h-auto py-3xl">
         <div class="container">
           <h2 class="text-white">
             Projects
@@ -94,7 +94,7 @@
               </span>
             </project-card>
 
-            <div class="col-sm-12 mt-xl text-center">
+            <div class="sm:col-12 mt-xl text-center">
               <a href="https://github.com/tjhillard" target="_blank">
                 <button class="button button-primary button-big hover:shift-right-lg hover:shadow-md">
                   View all
@@ -107,10 +107,10 @@
     </transition>
 
     <!-- writing -->
-    <div v-if="showWriting" class="pattern-hideout sm:min-h-screen md:min-h-auto lg:min-h-auto py-3xl flex flex-col justify-center">
+    <div v-if="showWriting" class="pattern-hideout py-3xl flex flex-col justify-center">
       <div class="container mb-2xl">
         <div class="grid">
-          <div class="col-sm-12 col-md-12 col-lg-12">
+          <div class="sm:col-12 md:col-12">
             <h2>
               Writing
             </h2>
@@ -121,7 +121,7 @@
             </p>
           </div>
 
-          <div class="col-sm-12 col-md-12 col-lg-12 bg-primary-light-2 p-sm rounded-md shadow-sm relative">
+          <div class="sm:col-12 md:col-12 bg-primary-light-2 p-sm rounded-md shadow-sm relative">
             <div class="h-full mountain-bg z-10 py-md rounded-md" style="min-height: 300px;" />
           </div>
         </div>
@@ -129,7 +129,7 @@
     </div>
 
     <!-- codepens -->
-    <div v-if="showWriting" class="sm:min-h-screen md:min-h-auto lg:min-h-auto py-3xl flex flex-col justify-center bg-primary">
+    <div v-if="showWriting" class="py-3xl flex flex-col justify-center bg-primary">
       <div class="container pb-2xl">
         <h2 class="text-white">
           Codepens

@@ -2,7 +2,7 @@
   <a
     :href="link"
     target="_blank"
-    class="col-sm-12 col-md-12 col-lg-6 p-md sm:my-md md:my-sm lg:my-sm cursor-pointer no-underline hover:shadow-lg hover:rise-md font-size-lg bg-white rounded-sm shadow-sm"
+    class="sm:col-12 md:col-12 lg:col-6 p-md sm:my-sm md:my-sm lg:my-sm cursor-pointer no-underline hover:shadow-lg hover:rise-md font-size-lg bg-white rounded-sm shadow-sm"
   >
     <span class="font-family-secondary font-weight-medium">{{ name }}</span>
     <span class="float-right">{{ emoji }} </span>

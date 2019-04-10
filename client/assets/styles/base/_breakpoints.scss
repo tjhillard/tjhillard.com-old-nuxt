@@ -2,11 +2,47 @@
 // Breakpoints
 // -----------------------------
 
-$breakpoint-sm-min: 0;
-$breakpoint-sm-max: 575px;
+$breakpoint-sm: 320px;
+$breakpoint-md: 600px;
+$breakpoint-lg: 1024px;
 
-$breakpoint-md-min: $breakpoint-sm-max + 1px;
-$breakpoint-md-max: 991px;
+@mixin when-media($media) {
+  @if $media == breakpoint-sm {
+    @media only screen and (max-width: $breakpoint-sm) { @content; }
+  }
+  @else if $media == breakpoint-md {
+    @media only screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - 1) { @content; }
+  }
+  @else if $media == breakpoint-lg {
+    @media only screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-lg - 1) { @content; }
+  }
+  @else if $media == breakpoint-lg {
+    @media only screen and (min-width: $breakpoint-lg) { @content; }
+  }
+}
 
-$breakpoint-lg-min: $breakpoint-md-max + 1px;
-$breakpoint-lg-max: 33554428px;
+@mixin below-media($media) {
+  @if $media == breakpoint-sm {
+    @media only screen and (max-width: $breakpoint-sm - 1) { @content; }
+  }
+  @else if $media == breakpoint-md {
+    @media only screen and (max-width: $breakpoint-md - 1) { @content; }
+  }
+  @else if $media == breakpoint-lg {
+    @media only screen and (max-width: $breakpoint-lg - 1) { @content; }
+  } else {
+    @media only screen and (min-width: $media) { @content; }
+  }
+}
+
+@mixin above-media($media) {
+  @if $media == breakpoint-sm {
+    @media only screen and (min-width: $breakpoint-sm) { @content; }
+  }
+  @else if $media == breakpoint-md {
+    @media only screen and (min-width: $breakpoint-md) { @content; }
+  }
+  @else if $media == breakpoint-lg {
+    @media only screen and (min-width: $breakpoint-lg) { @content; }
+  }
+}
