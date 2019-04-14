@@ -1,28 +1,15 @@
 @import 'reset.scss';
 
+@import 'steller-theme';
+@import '~steller-css/src/index.scss';
+
 /**
  * -------------------------------
  * Base
  * -------------------------------
  */
-@import 'base/breakpoints';
-@import 'base/grid';
-@import 'base/grid_column_rows';
-@import 'base/colors';
-@import 'base/typography';
-@import 'base/borders';
-@import 'base/container';
-@import 'base/effects';
-@import 'base/flexbox';
-@import 'base/motion';
-@import 'base/sizing';
-@import 'base/spacing';
-@import 'base/layout';
-@import 'base/hover';
-@import 'base/animations';
 @import 'base/backgrounds';
-@import 'base/responsive';
-@import 'base/defaults';
+@import 'base/hover';
 
 /**
  * -------------------------------

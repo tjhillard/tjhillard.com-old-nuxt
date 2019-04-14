@@ -9077,6 +9077,11 @@ stealthy-require@^1.1.1:
   resolved "https://registry.yarnpkg.com/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
 
+steller-css@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/steller-css/-/steller-css-0.0.3.tgz#b306e462f702737ee744bfdce5c27a6fba9e7afb"
+  integrity sha512-bdbxUUwdHsbGFHXSV/aEgUWxH51UIYM1K3YYddnZfIPpxD/3xR/qEwP8eQmoTo+kF3rKV2fANP0FUfpZv4O0MQ==
+
 stream-browserify@^2.0.1:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/stream-browserify/-/stream-browserify-2.0.2.tgz#87521d38a44aa7ee91ce1cd2a47df0cb49dd660b"
