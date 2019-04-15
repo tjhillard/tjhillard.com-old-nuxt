@@ -11,13 +11,7 @@
 
 	&.button-primary {
 		background-color: $color-primary;
-		color: $color-white;
+		color: white;
 		border-color: $color-primary;
-	}
-
-	&.button-info {
-		background-color: $color-info;
-		color: $color-white;
-		border-color: $color-info;
 	}
 }

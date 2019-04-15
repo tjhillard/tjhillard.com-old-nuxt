@@ -1,7 +1,7 @@
 @import 'reset.scss';
 
 @import 'steller-theme';
-@import '~steller-css/src/index.scss';
+@import '~steller-css/index';
 
 /**
  * -------------------------------
@@ -31,4 +31,3 @@
  * -------------------------------
  */
 @import 'pages/index-page.scss';
-

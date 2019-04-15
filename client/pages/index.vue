@@ -48,13 +48,12 @@
           <div class="grid pt-sm">
             <project-card v-if="showProjects" name="steller-css" emoji="⛰️" link="https://github.com/tjhillard/steller-css">
               <span>
-                Steller is a "functional CSS" framework made to enforce
-                visual consistency through adherance of a design system.
-                It also allows for more rapid development through limiting implementation
-                decisions required when writing UIs. By the way, this site uses Steller,
-                and only has a few lines of "custom CSS".
+                Steller is a functional (aka "atomic" or "utility-first") CSS framework for serving as the foundation of your application's design system.
+                It includes several built-in smart defaults for building responsive, accesible, and usable user interfaces.
+                Unlike other CSS frameworks, Steller has no opinion on the actual end appearance of your application,
+                it is simply a bridge for your design system and your application's styling.
                 <span>
-                  PS: fun fact, it's named after my favorite bird from the PNW, the
+                  Fun fact, it's named after my favorite bird from the PNW, the
                   <a href="https://www.audubon.org/field-guide/bird/stellers-jay" target="_blank">Steller's Jay</a>.
                 </span>
               </span>

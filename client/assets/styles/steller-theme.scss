@@ -1,0 +1,56 @@
+/**
+ * --------------------------------------------------------------
+ * Steller CSS
+ * Theme Configuration
+ *
+ * The centralized config file for your design system.
+ * --------------------------------------------------------------
+ */
+
+ /**
+ * --------------------------------------------------------------
+ * Core
+ *
+ * Color, Typography, and Responsive Breakpoints
+ * --------------------------------------------------------------
+ */
+
+// -----------------------------
+// Color
+// -----------------------------
+
+$color-primary: #2F4D54;
+$color-secondary: #6A96A1;
+
+$steller-colors: (
+	// Brand
+	'primary': #2F4D54,
+	'secondary': #6A96A1,
+
+	// Accents
+	'accent-green': #73937E,
+	'accent-teal': #86BBD8,
+
+	// System
+	'success': #4cd964,
+	'info': #86BBD8,
+	'warning': #ffcc00,
+	'danger': #FF7F66,
+
+	// Grayscale
+	'white': #fff,
+	'black': #000,
+	'gray': #393D3F,
+);
+
+// -----------------------------
+// Typography
+// -----------------------------
+
+// Fony families
+$font-family-heading: 'Josefin Sans', sans-serif;
+$font-family-body: 'Hind', sans-serif;
+
+$steller-custom-font-families: (
+	'secondary': ('Cormorant Infant', serif),
+);
