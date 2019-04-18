@@ -10,8 +10,8 @@
 	}
 
 	&.button-primary {
-		background-color: $color-primary;
+		background-color: var(--color-primary);
 		color: white;
-		border-color: $color-primary;
+		border: 1px solid var(--color-primary);
 	}
 }

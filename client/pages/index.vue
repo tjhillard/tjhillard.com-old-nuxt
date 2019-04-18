@@ -157,10 +157,10 @@
             Get in touch
           </h2>
           <p>
-            <strong class="font-family-secondary">Email:</strong> <a href="mailto:tjhillard@gmail.com" target="_blank">tjhillard@gmail.com</a>
+            <strong>Email:</strong> <a href="mailto:tjhillard@gmail.com" target="_blank">tjhillard@gmail.com</a>
           </p>
           <p>
-            <strong class="font-family-secondary">Twitter:</strong> <a href="https://twitter.com/_tjhillard" target="_blank">@_tjhillard</a>
+            <strong>Twitter:</strong> <a href="https://twitter.com/_tjhillard" target="_blank">@_tjhillard</a>
           </p>
         </div>
       </div>

@@ -2,9 +2,9 @@
   <a
     :href="link"
     target="_blank"
-    class="sm:col-12 md:col-12 lg:col-6 p-md sm:my-sm md:my-sm lg:my-sm cursor-pointer no-underline hover:shadow-lg hover:rise-md font-size-lg bg-white rounded-sm shadow-sm"
+    class="sm:col-12 md:col-12 lg:col-6 p-md sm:my-sm md:my-sm lg:my-sm cursor-pointer no-underline hover:shadow-lg hover:rise-md font-size-lg text-black bg-white rounded-sm shadow-sm"
   >
-    <span class="font-family-secondary font-weight-medium">{{ name }}</span>
+    <span class="font-weight-medium">{{ name }}</span>
     <span class="float-right">{{ emoji }} </span>
 
     <div class="mt-md font-size-sm text-black z-10">

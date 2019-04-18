@@ -19,9 +19,6 @@
 // Color
 // -----------------------------
 
-$color-primary: #2F4D54;
-$color-secondary: #6A96A1;
-
 $steller-colors: (
 	// Brand
 	'primary': #2F4D54,
@@ -39,7 +36,7 @@ $steller-colors: (
 
 	// Grayscale
 	'white': #fff,
-	'black': #000,
+	'black': #212121,
 	'gray': #393D3F,
 );
 
@@ -48,8 +45,8 @@ $steller-colors: (
 // -----------------------------
 
 // Fony families
-$font-family-heading: 'Josefin Sans', sans-serif;
-$font-family-body: 'Hind', sans-serif;
+$steller-font-family-heading: 'Josefin Sans', sans-serif;
+$steller-font-family-body: 'Hind', sans-serif;
 
 $steller-custom-font-families: (
 	'secondary': ('Cormorant Infant', serif),

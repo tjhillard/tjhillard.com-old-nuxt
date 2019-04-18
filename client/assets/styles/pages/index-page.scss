@@ -2,16 +2,16 @@
   margin-top: 100px;
   padding: 50px 0;
   position: relative;
-  background: $color-secondary;
+  background: var(--color-secondary);
 }
 
 .diagonal:before {
   position: absolute;
-  margin-top: -140px;
+  margin-top: -130px;
   content: '';
   border-style: solid;
   border-width: 0 0 5rem 100vw;
-  border-color: transparent $color-secondary $color-secondary transparent;
+  border-color: transparent var(--color-secondary) var(--color-secondary) transparent;
 }
 
 .topograph {
