@@ -120,7 +120,7 @@
             </p>
           </div>
 
-          <div class="sm:col-12 md:col-12 bg-primary-light-2 p-sm rounded-md shadow-sm relative">
+          <div class="sm:col-12 md:col-12 bg-secondary p-sm rounded-md shadow-sm relative">
             <div class="h-full mountain-bg z-10 py-md rounded-md" style="min-height: 300px;" />
           </div>
         </div>
@@ -191,14 +191,13 @@ export default {
       showWriting: false,
       currentTitleIndex: 0,
       titles: [
-        'web developer',
-        'UX/UI designer',
-        'cat dad',
+        'software engineer',
         'sports fan',
         'coffee addict',
         '90s music fan',
         'self-taught coder',
         'wannabe whiskey snob',
+        'cat dad',
         'fan of The Office',
         'casual hiker',
       ],
