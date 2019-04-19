@@ -50,6 +50,7 @@ export default {
     '@nuxtjs/proxy',
     'nuxt-fontawesome',
     'nuxt-webfontloader',
+    'nuxt-imagemin',
   ],
 
   webfontloader: {

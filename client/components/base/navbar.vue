@@ -45,33 +45,7 @@ export default {
   data() {
     return {
       showNavbar: false,
-      showNavbarItemOne: false,
-      showNavbarItemTwo: false,
-      showNavbarItemThree: false,
     };
-  },
-  created() {
-    setTimeout(() => {
-      this.showNavbar = true;
-    }, 1000);
-
-    setTimeout(() => {
-      this.showNavbarItemOne = true;
-    }, 250);
-
-    setTimeout(() => {
-      this.showNavbarItemTwo = true;
-    }, 550);
-
-    setTimeout(() => {
-      this.showNavbarItemThree = true;
-    }, 900);
   },
 };
 </script>
-
-<style>
-.invisible-fade {
-  transition: visibility 0s, opacity 0.5s linear;
-}
-</style>
