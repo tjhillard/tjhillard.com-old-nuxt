@@ -109,18 +109,17 @@
     <div v-if="showWriting" class="pattern-hideout py-3xl flex flex-col justify-center">
       <div class="container mb-2xl">
         <div class="grid">
-          <div class="sm:col-12 md:col-12">
+          <div class="col-12">
             <h2>
               Writing
             </h2>
             <p>
               I'm putting this section here to motivate me to start writing articles.
-              I plan on writing about topics such as general software engineering,
-              web UX/UI, animation, soft skills, as well as the occasional tutorial-style post.
+              I plan on writing about all things web development.
             </p>
           </div>
 
-          <div class="sm:col-12 md:col-12 bg-secondary p-sm rounded-md shadow-sm relative">
+          <div class="col-12 col-12 bg-secondary p-sm rounded-md shadow-sm relative">
             <div class="h-full mountain-bg z-10 py-md rounded-md" style="min-height: 300px;" />
           </div>
         </div>
@@ -140,9 +139,9 @@
             </span>
           </project-card>
 
-          <project-card name="Work in progress" emoji="🤔" link="#">
+          <project-card name="CSS is awesome" emoji="🎉" link="https://codepen.io/tjhillard/pen/mgGdOV">
             <span>
-              What's next? I'm thinking about some SVG animations.
+              Just like the meme.
             </span>
           </project-card>
         </div>
