@@ -16,7 +16,7 @@
                 Hello! 👋
               </h1>
             </transition>
-            <h2 class="no-user-select" style="line-height: 0.5em;">
+            <h2 class="user-select-none" style="line-height: 0.5em;">
               My name is TJ Hillard, I'm a
               <span class="underline leading-md text-secondary font-weight-medium cursor-pointer" @click="rotateTitle">{{ titles[currentTitleIndex] }}.</span>
             </h2>
@@ -35,7 +35,7 @@
 
     <!-- projects -->
     <transition name="fade-extra-slow">
-      <div v-if="showProjects" id="projects" class="sm:col-12 mt-md diagonal sm:min-h-screen md:min-h-auto py-3xl">
+      <div v-if="showProjects" id="projects" class="col-12 mt-md diagonal min-h-screen md:min-h-auto py-3xl">
         <div class="container">
           <h2 class="text-white">
             Projects

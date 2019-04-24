@@ -51,3 +51,7 @@ $steller-font-family-body: 'Hind', sans-serif;
 $steller-custom-font-families: (
 	'secondary': ('Cormorant Infant', serif),
 );
+
+$steller-gradients: (
+	'snazzy': linear-gradient(to right, #55c1ff 0, #55c1ff 100%),
+);
