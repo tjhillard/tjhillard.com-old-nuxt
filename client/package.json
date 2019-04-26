@@ -29,7 +29,8 @@
     "nuxt-imagemin": "^1.0.0",
     "nuxt-webfontloader": "^1.0.0",
     "sass-loader": "^7.1.0",
-    "steller-css": "^0.1.5"
+    "steller-css": "^0.2.0-alpha.0",
+    "steller-vue-transitions": "^0.0.0-alpha.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",

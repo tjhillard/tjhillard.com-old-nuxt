@@ -5,6 +5,8 @@
  * Steller
  * -------------------------------
  */
+
+@import '~steller-vue-transitions/index';
 @import 'steller-theme';
 @import '~steller-css/index';
 
@@ -29,7 +31,7 @@
  * Layouts
  * -------------------------------
  */
- @import 'layouts/default.scss';
+@import 'layouts/default.scss';
 
 /**
  * -------------------------------
