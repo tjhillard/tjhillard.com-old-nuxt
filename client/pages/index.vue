@@ -12,13 +12,13 @@
         <transition name="fade-extra-slow">
           <div v-if="showHello">
             <transition name="slide-in-from-left-extra-slow">
-              <h1 v-if="showHelloHeading" class="mt-3xl font-size-4xl" style="margin-bottom: 0; margin-left: -1px;">
+              <h1 v-if="showHelloHeading" class="mt-3xl font-size-4xl font-weight-bold" style="margin-bottom: 0; margin-left: -1px;">
                 Hello! 👋
               </h1>
             </transition>
-            <h2 class="user-select-none" style="line-height: 0.5em;">
+            <h2 class="user-select-none">
               My name is TJ Hillard, I'm a
-              <span class="underline leading-md text-secondary font-weight-medium cursor-pointer" @click="rotateTitle">{{ titles[currentTitleIndex] }}.</span>
+              <span class="underline leading-lg text-secondary font-weight-medium cursor-pointer" @click="rotateTitle">{{ titles[currentTitleIndex] }}.</span>
             </h2>
             <div class="pt-sm">
               <button
@@ -105,27 +105,6 @@
       </div>
     </transition>
 
-    <!-- writing -->
-    <div v-if="showWriting" class="pattern-hideout py-3xl flex flex-col justify-center">
-      <div class="container mb-2xl">
-        <div class="grid">
-          <div class="col-12">
-            <h2>
-              Writing
-            </h2>
-            <p>
-              I'm putting this section here to motivate me to start writing articles.
-              I plan on writing about all things web development.
-            </p>
-          </div>
-
-          <div class="col-12 col-12 bg-secondary p-sm rounded-md shadow-sm relative">
-            <div class="h-full mountain-bg z-10 py-md rounded-md" style="min-height: 300px;" />
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- codepens -->
     <div v-if="showWriting" class="py-3xl flex flex-col justify-center bg-primary">
       <div class="container pb-2xl">
@@ -142,6 +121,12 @@
           <project-card name="CSS is awesome" emoji="🎉" link="https://codepen.io/tjhillard/pen/mgGdOV">
             <span>
               Just like the meme.
+            </span>
+          </project-card>
+
+          <project-card name="Konami Code" emoji="🕹" link="https://codepen.io/tjhillard/pen/mgGdOV">
+            <span>
+              up, down, up, down, left, right, left, right, b, a, enter
             </span>
           </project-card>
         </div>

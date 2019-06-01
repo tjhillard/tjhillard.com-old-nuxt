@@ -10074,15 +10074,15 @@ stealthy-require@^1.1.1:
   resolved "https://registry.yarnpkg.com/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
 
-steller-css@^0.2.0-alpha.0:
-  version "0.2.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/steller-css/-/steller-css-0.2.0-alpha.0.tgz#12eea264a8485ff22784b7f5c56fa764ac1d590b"
-  integrity sha512-ZQnjHMVOrLhT36Is0swpqb4aayGhH07k7VPpfE8DH7jxySOsfKfKweMTpMyEg4wpnpIyatkd5FHZF9kYE+YKTg==
+steller-css@1.0.0-alpha.4:
+  version "1.0.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/steller-css/-/steller-css-1.0.0-alpha.4.tgz#05bcecc58a3cfb266467f10a44711016442730a9"
+  integrity sha512-9STWywgN/GtZ/TZmY8VcUyp22E7UG0sj4MYxOkaXdwZHfw1BO5S9LyDbSQqeW689NC/GWLcnx2Oj0bY+gmoKLg==
 
-steller-vue-transitions@^0.0.0-alpha.0:
-  version "0.0.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/steller-vue-transitions/-/steller-vue-transitions-0.0.0-alpha.0.tgz#6a775f0710940b139f8de94ad3add67f0595e2e6"
-  integrity sha512-V4m9qJQZPYz6/ALIlHRniCE1iWa0LkUEXN8azFAdyZc76sP68ZhkJlbmVE2bKpNWuz49exdyFbB+224tPSp3zw==
+steller-vue-transitions@^0.0.0-alpha.2:
+  version "0.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/steller-vue-transitions/-/steller-vue-transitions-0.0.0-alpha.2.tgz#9c3a6b8c3117abcc143b2254337c6ae3bc6b98e3"
+  integrity sha512-EknXw+X8KXP1tN/85vgcCHrzoe4D+ndlMN9zE+q8yx2/AgBKJi/+/itaWSOufmYQrrNe2r9zFTyx49vazZQp+w==
 
 stream-browserify@^2.0.1:
   version "2.0.2"

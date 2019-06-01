@@ -7,8 +7,8 @@
  * --------------------------------------------------------------
  */
 
-@import '~steller-vue-transitions/index';
-$steller-modules: ($steller-vue-transitions);
+// @import '~steller-vue-transitions/index';
+// $steller-modules: ($steller-vue-transitions);
 
  /**
  * --------------------------------------------------------------
@@ -47,11 +47,9 @@ $steller-colors: (
 // Typography
 // -----------------------------
 
-// Fony families
-$steller-font-family-heading: 'Josefin Sans', sans-serif;
-$steller-font-family-body: 'Hind', sans-serif;
-
-$steller-custom-font-families: (
+$steller-font-families: (
+	'heading': ('Josefin Sans', sans-serif),
+	'body': ('Hind', sans-serif),
 	'secondary': ('Cormorant Infant', serif),
 );
 

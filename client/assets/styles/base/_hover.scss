@@ -49,15 +49,15 @@
 // -----------------------------
 
 .hover\:shadow-sm:hover {
-	box-shadow: $steller-box-shadow-sm;
+	box-shadow: box-shadow(sm);
 }
 
 .hover\:shadow-md:hover {
-	box-shadow: $steller-box-shadow-md;
+	box-shadow: box-shadow(md);
 }
 
 .hover\:shadow-lg:hover {
-	box-shadow: $steller-box-shadow-lg;
+	box-shadow: box-shadow(lg);
 }
 
 // -----------------------------
