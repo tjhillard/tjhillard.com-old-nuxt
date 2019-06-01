@@ -124,7 +124,7 @@
             </span>
           </project-card>
 
-          <project-card name="Konami Code" emoji="🕹" link="https://codepen.io/tjhillard/pen/mgGdOV">
+          <project-card name="Konami Code" emoji="🕹" link="https://codepen.io/tjhillard/pen/pmPadG">
             <span>
               up, down, up, down, left, right, left, right, b, a, enter
             </span>
